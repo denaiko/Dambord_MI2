@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div.brown,
+div.yellow {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    float: left;
+    z-index: 0;
+}
+
+div.black,
+div.white {
+    width: 50px;
+    height: 50px;
+    float: left;
+    position: absolute;
+    z-index: 10000;
+    border-radius: 50%;
+}
+
+div:nth-child(11),
+div:nth-child(21),
+div:nth-child(31),
+div:nth-child(41),
+div:nth-child(51),
+div:nth-child(61),
+div:nth-child(71),
+div:nth-child(81),
+div:nth-child(91) {
+    clear: left;
+}
+
+.brown {
+    background-color: saddlebrown;
+}
+
+.yellow {
+    background-color: gold;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.white {
+    background-color: white;
+    color: black;
+}
